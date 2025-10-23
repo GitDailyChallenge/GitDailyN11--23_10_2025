@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎡 Roulette Picker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎡 Roulette Picker</h1>
+      <p>Enter your options (comma separated):</p>
+
+      <textarea
+        id="options"
+        placeholder="Ex: Alice, Bob, Charlie, Diana"
+      ></textarea>
+      <button id="spin">🎯 Spin</button>
+
+      <div class="roulette-box" id="roulette"></div>
+      <h2 id="result" class="hidden">
+        Winner: 🎉 <span id="winner"></span> 🎉
+      </h2>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

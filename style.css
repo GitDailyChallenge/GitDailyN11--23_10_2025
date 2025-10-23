@@ -1,0 +1,74 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: radial-gradient(circle at top, #141e30, #243b55);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  width: 360px;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  resize: none;
+}
+
+button {
+  background: #e94560;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  color: #fff;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0f3460;
+}
+
+.roulette-box {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  min-height: 120px;
+}
+
+.option {
+  background: #0f3460;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.option.active {
+  background: #e94560;
+  transform: scale(1.1);
+}
+
+.hidden {
+  display: none;
+}
+
+#winner {
+  color: #00ffcc;
+}
